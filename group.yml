@@ -1,0 +1,7 @@
+---
+- hosts: vlab
+  tasks:
+     - name: create group
+       group: "name=b21a gid=600 state=present"
+     - name: create user
+       user: "name=prasanna uid=601 group=b21a createhome=yes"

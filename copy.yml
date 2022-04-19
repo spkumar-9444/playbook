@@ -1,0 +1,5 @@
+---
+- hosts: vlab
+  tasks:
+     - name: copy the file
+       copy: src=/etc/fstab dest=/tmp/
